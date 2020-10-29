@@ -5,12 +5,21 @@
   "author": "Hack Reactor <curriculum.team@hackreactor.com>",
   "license": "UNLICENSED",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline",
+    "build-watch": "babel . -w --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline",
+    "start": "npm run build-watch"
+  },
   "dependencies": {
     "jquery": "^2.2.1",
     "lodash": "^4.6.1",
     "react": "^16.8.6",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "react-dom": "^16.12.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-plugin-react": "1.0.0",
+    "babel-preset-react": "^6.5.0"
+  }
 }

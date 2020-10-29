@@ -1,0 +1,8 @@
+## Ignore Mac OSX ##
+.DS_Store
+
+## Ignore npm node modules ##
+node_modules/
+
+## Ignore compiled files ##
+compiled/
